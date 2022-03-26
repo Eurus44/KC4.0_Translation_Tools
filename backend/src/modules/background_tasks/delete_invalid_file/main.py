@@ -85,7 +85,7 @@ def get_file_created_time(file):
 
 def get_task_id_from_task_result_file_path(file_path):
 
-    return (file_path.split('.')[0]).split('__')[-1]
+    return (file_path.split('.')[0]).split('__')[-1]             
 
 def get_to_be_deleted_file_path(invalid_file_paths):
 

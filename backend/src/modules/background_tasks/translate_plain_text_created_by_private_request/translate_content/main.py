@@ -223,6 +223,11 @@ async def main():
             translations_history=translations_history
         )
 
+        # logger.debug(
+        #     msg='=================' + invalid_tasks_mapper + '=============================================='
+        # )
+        # print(invalid_tasks_mapper)
+
         await mark_invalid_tasks(invalid_tasks_mapper)
 
         valid_tasks_id = list(map(lambda t: t.id.value, tasks))

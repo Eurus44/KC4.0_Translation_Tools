@@ -218,6 +218,10 @@ async def main():
 
         tasks_result, translations_history = await asyncio.gather(*tasks_result_and_trans_history_req)
 
+        print("Tasks", tasks)
+        print("Tasks Res", tasks_result)
+        print("Tasks his", translations_history)
+
         valid_tasks_mapper, invalid_tasks_mapper = await read_task_result(
             tasks=tasks, 
             tasks_result=tasks_result,
